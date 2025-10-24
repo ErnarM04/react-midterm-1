@@ -34,9 +34,8 @@ function ProductList() {
       <header>
         {categories.length > 0 ? (<SearchProduct receivedCategories={categories} filterCategory={filterByCategory} searchProduct={searchProduct}/>) : (<p>Loading categories...</p>)}
       </header>
-    <div className="line"></div>
-      <ul>
-        {filteredProducts ? filteredProducts.map((product) => (<li key={product.title}>{ProductCard(product)}</li>)) : (<p>Loading products...</p>)}
+      <ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 auto-rows-fr">
+        {filteredProducts ? filteredProducts.map((product) => (<li key={product.title}><ProductCard{...product}/></li>)) : (<p>Loading products...</p>)}
       </ul>
     </div>
   );

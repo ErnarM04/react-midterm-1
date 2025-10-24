@@ -24,7 +24,7 @@ function SearchProduct({ receivedCategories, filterCategory, searchProduct }) {
     <div>
       
 <div>
-    <nav class="bg-white dark:bg-gray-800  shadow py-4 ">
+    <nav class="bg-cyan-900 dark:bg-gray-800  shadow py-4 ">
         <div class="px-8 mx-auto max-w-7xl">
             <div class="flex items-center justify-between h-16">
                 <div class=" flex items-center">
